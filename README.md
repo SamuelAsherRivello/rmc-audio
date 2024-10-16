@@ -1,26 +1,23 @@
 [![npm package](https://img.shields.io/npm/v/com.rmc.rmc-audio)](https://www.npmjs.com/package/com.rmc.rmc-audio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-<img width = "400" src="https://raw.githubusercontent.com/SamuelAsherRivello/rmc-core/main/RMC%20Core/Documentation~/com.rmc_namespace_logo.png" />
-
 # RMC Audio
 
-- [How To Use](#how-to-use)
-- [Install](#install)
-  - [Via NPM](#via-npm)
-  - [Or Via Git URL](#or-via-git-url)
-- [Optional](#optional)
-  - [Tests](#tests)
-  - [Samples](#samples)
-- [Configuration](#configuration)
+<img width = "600" src="https://raw.githubusercontent.com/SamuelAsherRivello/rmc-audio/main/RMC%20Audio/Documentation/ReadMe/Art/Sprites/ProjectBanner.png" />
 
-<!-- toc -->
+<BR>
+<BR>
 
-## How to use
+# Contents
 
-RMC's best practices for Unity package structure and C# coding standards. It is a recommended starting point for new Unity packages.
+1. [Install](#install)
+1. [Configuration](#configuration)
+1. [Testing](#testing)
+1. [Credits](#credits)
 
-Enjoy!
+<BR>
+<BR>
+
 
 ## Install
 
@@ -75,9 +72,21 @@ Or to edit the `Packages/manifest.json` directly with your favorite text editor,
 }
 ```
 
-## Optional
 
-### Tests
+<BR>
+<BR>
+
+## Configuration
+
+- `Unity Target` - [Standalone MAC/PC](https://support.unity.com/hc/en-us/articles/206336795-What-platforms-are-supported-by-Unity-)
+- `Unity Version` - Any [Unity Editor](https://unity.com/download) 2021.x or higher
+- `Unity Rendering` - Any [Unity Render Pipeline](https://docs.unity3d.com/Manual/universal-render-pipeline.html)
+- `Unity Aspect Ratio` - Any [Unity Game View](https://docs.unity3d.com/Manual/GameView.html)
+
+<BR>
+<BR>
+
+## Testing
 
 The package can optionally be set as _testable_.
 In practice this means that tests in the package will be visible in the [Unity Test Runner](https://docs.unity3d.com/2017.4/Documentation/Manual/testing-editortestsrunner.html).
@@ -102,24 +111,23 @@ Some packages include optional samples with clear use cases. To import and run t
 1. Select samples
 1. Import
 
-## Configuration
 
-- `Unity Target` - [Standalone MAC/PC](https://support.unity.com/hc/en-us/articles/206336795-What-platforms-are-supported-by-Unity-)
-- `Unity Version` - Any [Unity Editor](https://unity.com/download) 2021.x or higher
-- `Unity Rendering` - Any [Unity Render Pipeline](https://docs.unity3d.com/Manual/universal-render-pipeline.html)
-- `Unity Aspect Ratio` - Any [Unity Game View](https://docs.unity3d.com/Manual/GameView.html)
+<BR>
+<BR>
 
-# Created By
+## Credits
+
+**Created By**
 
 - Samuel Asher Rivello
-- Over 23 years XP with game development (2023)
-- Over 10 years XP with Unity (2023)
+- Over 25 years XP with game development (2024)
+- Over 11 years XP with Unity (2024)
 
-# Contact
+**Contact**
 
 - Twitter - <a href="https://twitter.com/srivello/">@srivello</a>
+- Git - <a href="https://github.com/SamuelAsherRivello/">Github.com/SamuelAsherRivello</a>
 - Resume & Portfolio - <a href="http://www.SamuelAsherRivello.com">SamuelAsherRivello.com</a>
-- Source Code on Git - <a href="https://github.com/SamuelAsherRivello/">Github.com/SamuelAsherRivello</a>
 - LinkedIn - <a href="https://Linkedin.com/in/SamuelAsherRivello">Linkedin.com/in/SamuelAsherRivello</a> <--- Say Hello! :)
 
 **License**
