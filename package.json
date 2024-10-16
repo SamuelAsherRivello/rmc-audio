@@ -1,0 +1,42 @@
+{
+  "name": "com.rmc.rmc-audio",
+  "displayName": "RMC Audio",
+  "version": "1.8.0",
+  "unity": "2022.3",
+  "description": "Audio library for Unity Development by Rivello Multimedia Consulting",
+  "keywords": [
+    "unity",
+    "unity3d",
+    "rmc",
+    "upm",
+    "package",
+    "audio",
+    "audioclip",
+    "template",
+    "utility"
+  ],
+  "dependencies": {
+    "com.rmc.rmc-readme": "1.2.1",
+    "com.rmc.rmc-core": "1.8.0"
+  },
+  "homepage": "https://github.com/samuelasherrivello/rmc-audio.git",
+  "bugs": {
+    "url": "https://github.com/samuelasherrivello/rmc-audio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/samuelasherrivello/rmc-audio.git"
+  },
+  "license": "MIT",
+  "author": "rmc (github.com/SamuelAsherRivello)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "samples": [
+    {
+      "displayName": "RMC Audio Sample",
+      "description": "Demonstrate the RMC Audio library",
+      "path": "RMC Audio/Samples~/RMC Audio Sample"
+    }
+  ]
+}
