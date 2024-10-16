@@ -1,7 +1,7 @@
 {
   "name": "com.rmc.rmc-audio",
   "displayName": "RMC Audio",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "unity": "2022.3",
   "description": "Audio library for Unity Development by Rivello Multimedia Consulting",
   "keywords": [
@@ -34,9 +34,9 @@
   },
   "samples": [
     {
-      "displayName": "RMC Audio Sample",
+      "displayName": "RMC Audio Samples",
       "description": "Demonstrate the RMC Audio library",
-      "path": "RMC Audio/Samples~/RMC Audio Sample"
+      "path": "RMC Audio/Samples~/RMC Audio Samples"
     }
   ]
 }
