@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using RMC.Core.DesignPatterns.Creational.Singleton.CustomSingletonMonobehaviour;
+using System.Threading.Tasks;
+using RMC.Core.DesignPatterns.Creational.Singletons;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Audio;
@@ -12,7 +13,7 @@ namespace RMC.Audio
 	/// Maintain a list of AudioSources and play the next 
 	/// AudioClip on the first available AudioSource.
 	/// </summary>
-	public class AudioManager : SingletonMonobehaviour<AudioManager>
+	public class AudioManager : SingletonMonoBehaviour<AudioManager>
 	{
 		// Properties -------------------------------------
 		public List<AudioClip> AudioClips { get { return _audioManagerConfiguration.AudioClips; } }
@@ -25,7 +26,33 @@ namespace RMC.Audio
 		public AudioMixerGroup MasterAudioMixerGroup { get { return _audioManagerConfiguration.AudioMixer.FindMatchingGroups("Master")[0]; } }
 		
 		public Volume MasterVolume { get { return _masterVolume;}}
+		public bool IsPlaying 
+		{
+			get
+			{
+				foreach (AudioSource audioSource in _audioSources)
+				{
+					if (audioSource.isPlaying)
+					{
+						return true;
+					}
+				}
+				return false;
+			}
+		}
 		
+		public async Task WhileIsPlayingAsync()
+		{
+			// Allow all current events to fire this frame
+			await Awaitable.NextFrameAsync();
+			
+			// Wait until all audio is done playing
+			while (IsPlaying)
+			{
+				await Awaitable.NextFrameAsync();
+			}
+		}
+
 		// Fields -----------------------------------------
 		[Header("References (Project)")]
 		[SerializeField]
@@ -158,5 +185,6 @@ namespace RMC.Audio
 		
 		
 		// Event Handlers ---------------------------------
+
 	}
 }

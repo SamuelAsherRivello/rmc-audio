@@ -1,7 +1,7 @@
 {
   "name": "com.rmc.rmc-audio",
   "displayName": "RMC Audio",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "unity": "2022.3",
   "description": "Audio library for Unity Development by Rivello Multimedia Consulting",
   "keywords": [
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "com.rmc.rmc-readme": "1.2.1",
-    "com.rmc.rmc-core": "1.8.0"
+    "com.rmc.rmc-core": "1.9.4"
   },
   "homepage": "https://github.com/samuelasherrivello/rmc-audio.git",
   "bugs": {
